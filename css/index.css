@@ -1,381 +1,303 @@
 /* default setting */
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 1920px;
+  font-size: 1rem;
+}
+
+/* section 1 */
+.section1 {
+  max-width: 1920px;
+  min-height: 1022px;
+  background-color: #d7d7d7;
+  background-image: url("../images/Rectangle\ 67.png");
+  background-repeat: no-repeat;
+  background-size: 60vw 100%;
+  background-position: bottom right;
+  padding-top: 72px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+/* nav section */
+.section1 nav {
+  margin-bottom: 34px;
+}
+.section1 ol {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 8px;
+}
+
+.section1 .links {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.section1 .links a {
+  max-width: 147px;
+  min-height: 46px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.28px;
+  text-align: center;
+  color: white;
+  min-width: 8vw;
+  text-decoration: none;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px;
+}
+
+.section1 .links .contact {
+  background-color: white;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20.72px;
+  text-align: center;
+  border: 4px solid #ffffff;
+  border-radius: 30px;
+}
+
+.section1 .menu {
+  display: none;
+}
+.section1 .logo .mobileLogo {
+  display: none;
+}
+
+/* css handburger menu css */
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  left: 0px;
+  top: 70px;
+  background-color: #00000066;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 7.3px 0px;
+  text-decoration: none;
+  height: 57px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.63px;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  /* background-color: #3e8e41; */
+}
+/* ENDS */
+
+/* Hero css */
+.hero {
+  display: flex;
+  gap: 150px;
+}
+.hero .BioDataLeftBox h2 {
+  max-width: 171px;
+  min-height: 58px;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 40px;
+}
+
+.hero .BioDataLeftBox h3 {
+  max-width: 532px;
+  /* height: 105px; */
+  font-family: "Raleway", sans-serif;
+  font-size: 40.5px;
+  font-weight: 700;
+  line-height: 93.92px;
+  text-align: center;
+  /* margin-bottom: 15px; */
+}
+.BioDataRightBox img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
+}
+
+.photoDiscription {
+  position: absolute;
+  z-index: 3;
+}
+/* .hero .BioDataRightBox{
+  padding-left: 80px;
+} */
+
+.BioDataLeftBox p {
+  max-width: 426px;
+  height: 40px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 29.35px;
+  text-align: center;
+}
+
+.heroIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 120px;
+  div {
+    background-color: #c4c4c4;
+    width: 61px;
+    height: 56px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    img {
+      width: 34px;
+      height: 34px;
+      display: flex;
+      margin: 10px;
+    }
   }
-  
-  html {
+}
+
+.heroMobile {
+  display: none;
+  width: 457px;
+  height: 159px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 400px auto;
+}
+
+.whiteSeparator {
+  width: 120px;
+  height: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.heroMobile span {
+  width: 457px;
+  height: 41px;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29.9px;
+  text-align: center;
+}
+.heroMobile p {
+  width: 455px;
+  height: 39px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39.01px;
+  text-align: center;
+}
+
+/* section2 */
+.section2 {
+  background: linear-gradient(
+    90.18deg,
+    #1d1d1d 31.74%,
+    #1d1d1d 90.49%,
+    #1d1d1d 90.49%
+  );
+  max-width: 1920px;
+  height: 250px;
+  position: relative;
+  z-index: 2;
+  color: white;
+
+  .itContent {
     max-width: 1920px;
-    font-size: 1rem;
-  }
-  
-  /* section 1 */
-  .section1 {
-    max-width: 1920px;
-    min-height: 1022px;
-    background-color: #d7d7d7;
-    background-image: url("../images/Rectangle\ 67.png");
+    height: 300px;
+    background: #1d1d1d url(../images/backgroundImage.png) no-repeat right /
+      388.05px 368.16px;
     background-repeat: no-repeat;
-    background-size: 60vw 100%;
-    background-position: bottom right;
-    padding-top: 72px;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    background-position: 105% 0%;
+    background-size: 35%;
+    padding: 25px 0 5px 50px;
   }
-  
-  /* nav section */
-  .section1 nav {
-    margin-bottom: 34px;
-  }
-  .section1 ol {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style-type: none;
-    gap: 8px;
-  }
-  
-  .section1 .links {
-    display: flex;
-    align-items: center;
-    /* justify-content: flex-start; */
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 8px;
-  }
-  
-  .section1 .links a {
-    max-width: 147px;
-    min-height: 46px;
+
+  h1 {
+    max-width: 363px;
+    height: 45px;
     font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 18.28px;
-    text-align: center;
-    color: white;
-    min-width: 8vw;
-    text-decoration: none;
-    height: 46px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 9px;
-  }
-  
-  .section1 .links .contact {
-    background-color: white;
-    color: black;
-    font-family: "Montserrat", sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 20.72px;
-    text-align: center;
-    border: 4px solid #ffffff;
-    border-radius: 30px;
-  }
-  
-  .section1 .menu {
-    display: none;
-  }
-  .section1 .logo .mobileLogo {
-    display: none;
-  }
-  
-  /* css handburger menu css */
-  .dropbtn {
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: fixed;
-    left: 0px;
-    top: 70px;
-    background-color: #00000066;
-    width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    text-align: center;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 7.3px 0px;
-    text-decoration: none;
-    height: 57px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 14.63px;
-    text-align: center;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-    /* background-color: #3e8e41; */
-  }
-  /* ENDS */
-  
-  /* Hero css */
-  .hero {
-    display: flex;
-    gap: 150px;
-  }
-  .hero .BioDataLeftBox h2 {
-    max-width: 171px;
-    min-height: 58px;
-    font-family: "Raleway", sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 46.96px;
-    text-align: center;
-    margin-top: 200px;
-    margin-bottom: 40px;
-  }
-  
-  .hero .BioDataLeftBox h3 {
-    max-width: 532px;
-    /* height: 105px; */
-    font-family: "Raleway", sans-serif;
-    font-size: 40.5px;
-    font-weight: 700;
-    line-height: 93.92px;
-    text-align: center;
-    /* margin-bottom: 15px; */
-  }
-  .BioDataRightBox img {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* position: relative; */
-  }
-  
-  .photoDiscription {
-    position: absolute;
-    z-index: 3;
-  }
-  /* .hero .BioDataRightBox{
-    padding-left: 80px;
-  } */
-  
-  .BioDataLeftBox p {
-    max-width: 426px;
-    height: 40px;
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 29.35px;
-    text-align: center;
-  }
-  
-  .heroIcons {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    margin-top: 120px;
-    div {
-      background-color: #c4c4c4;
-      width: 61px;
-      height: 56px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      img {
-        width: 34px;
-        height: 34px;
-        display: flex;
-        margin: 10px;
-      }
-    }
-  }
-  
-  .heroMobile {
-    display: none;
-    width: 457px;
-    height: 159px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 400px auto;
-  }
-  
-  .whiteSeparator {
-    width: 120px;
-    height: 10px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  
-  .heroMobile span {
-    width: 457px;
-    height: 41px;
-    font-family: "Advent Pro", sans-serif;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 29.9px;
-    text-align: center;
-  }
-  .heroMobile p {
-    width: 455px;
-    height: 39px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 39.01px;
-    text-align: center;
-  }
-  
-  /* section2 */
-  .section2 {
-    background: linear-gradient(
-      90.18deg,
-      #1d1d1d 31.74%,
-      #1d1d1d 90.49%,
-      #1d1d1d 90.49%
-    );
-    max-width: 1920px;
-    height: 250px;
-    position: relative;
-    z-index: 2;
-    color: white;
-  
-    .itContent {
-      max-width: 1920px;
-      height: 300px;
-      background: #1d1d1d url(../images/backgroundImage.png) no-repeat right /
-        388.05px 368.16px;
-      background-repeat: no-repeat;
-      background-position: 105% 0%;
-      background-size: 35%;
-      padding: 25px 0 5px 50px;
-    }
-  
-    h1 {
-      max-width: 363px;
-      height: 45px;
-      font-family: "Montserrat", sans-serif;
-      font-size: 30px;
-      font-weight: 700;
-      line-height: 36.57px;
-      letter-spacing: 0.1854em;
-      text-align: left;
-      margin-bottom: 15px;
-      color: white;
-    }
-  
-    p {
-      max-width: 900px;
-      min-height: 89px; 
-      font-family: "Open Sans", sans-serif;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 20.8px;
-      text-align: justified;
-      margin-bottom: 45px;
-    }
-  
-    .readMorebtn {
-      max-width: 150px;
-      background: none;
-      border: none;
-      color: inherit;
-      font: inherit;
-      cursor: pointer;
-      padding: 0;
-      outline: none;
-      a {
-        max-width: 139px;
-        height: 25px;
-        font-family: "Montserrat", sans-serif;
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 18.29px;
-        margin-top: 5px;
-        padding: 5px 20px;
-        color: white;
-        text-decoration: none;
-        background: none;
-        border-left: 2px solid white;
-        border-right: 2px solid white;
-      }
-    }
-  }
-  
-  .BioData {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-  }
-  
-  .BioDataRightBox img {
-    max-width: 783px;
-    height: 877px;
-  }
-  
-  /* section3 styling  */
-  .section3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .section3 .aboutMe {
-    max-width: 404px;
-    height: 107px;
-    border: 8px solid #000000;
-    font-family: "Montserrat", sans-serif;
-    z-index: 4;
     font-size: 30px;
     font-weight: 700;
-    line-height: 98.37px;
-    letter-spacing: 0.3554em;
-    text-align: center;
-    margin: auto;
-    margin-top: 220px;
+    line-height: 36.57px;
+    letter-spacing: 0.1854em;
+    text-align: left;
+    margin-bottom: 15px;
+    color: white;
   }
-  
-  .aboutMe a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  .section3Div > p:nth-of-type(1) {
-    max-width: 763px;
-    height: 47px;
+
+  p {
+    max-width: 900px;
+    min-height: 89px; 
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 20.8px;
-    text-align: center;
-    margin: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    text-align: justified;
+    margin-bottom: 45px;
   }
-  
-  .section3Div > button:nth-of-type(1) {
+
+  .readMorebtn {
+    max-width: 150px;
     background: none;
     border: none;
     color: inherit;
@@ -383,9 +305,6 @@
     cursor: pointer;
     padding: 0;
     outline: none;
-    display: block;
-    margin: auto;
-    margin-bottom: 60px;
     a {
       max-width: 139px;
       height: 25px;
@@ -393,624 +312,710 @@
       font-size: 15px;
       font-weight: 600;
       line-height: 18.29px;
-      margin-top: 25px;
+      margin-top: 5px;
       padding: 5px 20px;
-      color: black;
+      color: white;
       text-decoration: none;
       background: none;
-      border-left: 2px solid black;
-      border-right: 2px solid black;
+      border-left: 2px solid white;
+      border-right: 2px solid white;
     }
   }
-  
-  .section3Div > img:nth-of-type(1) {
-    max-width: 170px;
-    height: 12px;
-    display: block;
-    margin: 20px auto;
-  }
-  
-  .container1 {
-    max-width: 1200px;
-    min-height: 373px;
-    margin: auto;
-    margin-top: 45px;
-  }
-  
-  .rowInlineblock {
-    display: inline-block;
-    max-width: 487px;
-    min-height: 182px;
-    margin-right: 45px;
-  }
-  .bkimgContainer {
-    max-width: 277px;
-    min-height: 65px;
+}
+
+.BioData {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.BioDataRightBox img {
+  max-width: 783px;
+  height: 877px;
+}
+
+/* section3 styling  */
+.section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section3 .aboutMe {
+  max-width: 404px;
+  height: 107px;
+  border: 8px solid #000000;
+  font-family: "Montserrat", sans-serif;
+  z-index: 4;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 98.37px;
+  letter-spacing: 0.3554em;
+  text-align: center;
+  margin: auto;
+  margin-top: 220px;
+}
+
+.aboutMe a {
+  color: black;
+  text-decoration: none;
+}
+
+.section3Div > p:nth-of-type(1) {
+  max-width: 763px;
+  height: 47px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-align: center;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.section3Div > button:nth-of-type(1) {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  display: block;
+  margin: auto;
+  margin-bottom: 60px;
+  a {
+    max-width: 139px;
+    height: 25px;
     font-family: "Montserrat", sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 26.82px;
-    letter-spacing: 0.1854em;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18.29px;
+    margin-top: 25px;
+    padding: 5px 20px;
+    color: black;
+    text-decoration: none;
+    background: none;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
   }
-  
-  .designbkimg {
-    background-image: url(../images/desimgbak.png);
-    background-repeat: no-repeat;
-  }
-  
-  .devbkimg {
-    background-image: url(../images/maintenancebackimg.png);
-    background-repeat: no-repeat;
-  }
-  
-  .mainbkimg {
-    background-image: url(../images/devbckimg.png);
-    background-repeat: no-repeat;
-  }
-  .row2Content {
-    max-width: 487px;
-    min-height: 182px;
-    margin: auto;
-  }
-  
-  .rowInlineblock p {
-    max-width: 500px;
-    min-height: 104px;
-    padding-left: 55px;
-  }
-  
-  .rowInlineblock h3 {
-    padding-top: 25px;
-    padding-left: 55px;
-  }
-  
-  .row2Content p {
-    max-width: 500px;
-    min-height: 104px;
-    padding-left: 55px;
-  }
-  .row2Content h3 {
-    padding-top: 25px;
-    padding-left: 55px;
-  }
-  
-  .separator {
-    max-width: 170px;
-    height: 12px;
-    margin: auto;
-    margin-bottom: 95px;
-  }
-  
-  .skills {
-    max-width: 400px;
-    height: 107px;
-    margin: auto;
-    border: 8px solid #000000;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.875em;
-    font-weight: 700;
-    line-height: 38.37px;
-    letter-spacing: 0.3554em;
-    padding-top: 20px;
-    text-align: center;
-    margin-bottom: 95px;
-  }
-  
-  .skills h2 {
-    max-width: 404px;
-    min-height: 74px;
-  }
-  
-  .iconContainer {
-    max-width: 948.72px;
-    width: 100%;
-    padding: 20px; /* Added padding for better spacing */
-    padding-left: 150px;
-    box-sizing: border-box;
-    text-align: left;
+}
+
+.section3Div > img:nth-of-type(1) {
+  max-width: 170px;
+  height: 12px;
+  display: block;
+  margin: 20px auto;
+}
+
+.container1 {
+  max-width: 1200px;
+  min-height: 373px;
+  margin: auto;
+  margin-top: 45px;
+}
+
+.rowInlineblock {
+  display: inline-block;
+  max-width: 487px;
+  min-height: 182px;
+  margin-right: 45px;
+}
+.bkimgContainer {
+  max-width: 277px;
+  min-height: 65px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.82px;
+  letter-spacing: 0.1854em;
+}
+
+.designbkimg {
+  background-image: url(../images/desimgbak.png);
+  background-repeat: no-repeat;
+}
+
+.devbkimg {
+  background-image: url(../images/maintenancebackimg.png);
+  background-repeat: no-repeat;
+}
+
+.mainbkimg {
+  background-image: url(../images/devbckimg.png);
+  background-repeat: no-repeat;
+}
+.row2Content {
+  max-width: 487px;
+  min-height: 182px;
+  margin: auto;
+}
+
+.rowInlineblock p {
+  max-width: 500px;
+  min-height: 104px;
+  padding-left: 55px;
+}
+
+.rowInlineblock h3 {
+  padding-top: 25px;
+  padding-left: 55px;
+}
+
+.row2Content p {
+  max-width: 500px;
+  min-height: 104px;
+  padding-left: 55px;
+}
+.row2Content h3 {
+  padding-top: 25px;
+  padding-left: 55px;
+}
+
+.separator {
+  max-width: 170px;
+  height: 12px;
+  margin: auto;
+  margin-bottom: 95px;
+}
+
+.skills {
+  max-width: 400px;
+  height: 107px;
+  margin: auto;
+  border: 8px solid #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875em;
+  font-weight: 700;
+  line-height: 38.37px;
+  letter-spacing: 0.3554em;
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 95px;
+}
+
+.skills h2 {
+  max-width: 404px;
+  min-height: 74px;
+}
+
+.iconContainer {
+  max-width: 948.72px;
+  width: 100%;
+  padding: 20px; /* Added padding for better spacing */
+  padding-left: 150px;
+  box-sizing: border-box;
+  text-align: left;
 }
 
 .usingNowContainer, .learningContainer, .otherSkillsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 90px;
 }
 
 .iconContainer h3 {
-    max-width: 350px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.875em;
-    font-weight: 700;
-    letter-spacing: 0.1854em;
-    margin-bottom: 60px;
-    text-align: left;
-    padding-left: 30px;
+  max-width: 350px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875em;
+  font-weight: 700;
+  letter-spacing: 0.1854em;
+  margin-bottom: 60px;
+  text-align: left;
+  padding-left: 30px;
 }
 
 .usingIcon1, .learningIcon1, .othersIcon1 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .iconContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .iconContent img {
-    max-width: 100px;
-    height: auto;
+  max-width: 100px;
+  height: auto;
 }
 
 .iconContent p {
-  max-width: 240px;
-  min-height: 52px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 0.1354em;
-    margin-top: 40px;
-    margin-bottom: 95px;
+max-width: 240px;
+min-height: 52px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.1354em;
+  margin-top: 40px;
+  margin-bottom: 95px;
 }
 
 .html5 {
-  max-width: 84.21px;
-  min-height: 100px;
+max-width: 84.21px;
+min-height: 100px;
 }
 .css3 {
-  max-width: 84.14px;
-  min-height: 100px;
+max-width: 84.14px;
+min-height: 100px;
 }
 .sass {
-  max-width: 126.62px;
-  min-height: 99.93px;
+max-width: 126.62px;
+min-height: 99.93px;
 }
 .javascriptBoostGit {
-  max-width: 96.24px;
-  min-height: 100px;
+max-width: 96.24px;
+min-height: 100px;
 } 
 .react {
-  max-width: 93.96px;
-  min-height: 87.41px;
+max-width: 93.96px;
+min-height: 87.41px;
 }
 .figma {
-  max-width: 69.49px;
-  min-height: 100px;
+max-width: 69.49px;
+min-height: 100px;
 }
 
 /* Section Four */
-  .section4por {
-    max-width: 1920px;
-    min-height: 321px;
-    background-image: url("../images/imagePORTFOLIO.png");
+.section4por {
+  max-width: 1920px;
+  min-height: 321px;
+  background-image: url("../images/imagePORTFOLIO.png");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section4por div {
+  max-width: 482px;
+  min-height: 74px;
+  border: 8px solid #000000;
+  padding: 0 35px;
+}
+
+.section4por div p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38.37px;
+  letter-spacing: 0.4354em;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* section Five */
+.section5 {
+  max-width: 1920px;
+  min-height: 74px;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section5 div {
+  max-width: 500px;
+  min-height: 48px;
+  border-bottom: 1px solid white;
+}
+.section5 div a {
+  max-width: 149px;
+  min-height: 48px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.07px;
+  text-align: center;
+  color: white;
+  margin-right: 65px;
+  padding-top: 18px;
+  padding-left: 40px;
+  text-decoration: none;
+}
+
+/* Section Six */
+.section6 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent container overflow */
+}
+
+.galleyContainer {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+  overflow: hidden;
+}
+
+.galleyContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container without distortion */
+  display: block; /* Remove extra space below images */
+  box-sizing: border-box;
+}
+
+.gallaries.eatsome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Ensure the div appears above the images */
+  padding: 20px; /* Add some padding */
+  box-sizing: border-box;
+}
+
+.demoMore {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.demoMore span {
+  max-width: 114px;
+  min-height: 27px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.63px;
+  letter-spacing: 0.095em;
+  text-align: center;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 6px 40px;
+  }
+
+.eatsome p:nth-child(1),
+.eatsome p:nth-child(2),
+.eatsome p:nth-child(3) {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.eatsome p:nth-child(1) {
+  max-width: 134px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 12.19px;
+  letter-spacing: 0.095em;
+  padding-top: 30px;
+}
+
+.eatsome p:nth-child(2) {
+  max-width: 482px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 31.97px;
+  letter-spacing: 0.2054em;
+}
+
+.eatsome p:nth-child(3) {
+  max-width: 315px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12.19px;
+  letter-spacing: -0.015em;
+  margin-bottom: 20px;
+}
+
+.section7 div {
+  max-width: 1920px;
+  min-height: 100px;
+  background: #1a1a1a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  line-height: 24.38px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.section8 .contactContainer {
+  max-width: 1920px;
+  min-height: 1178px;
+  background: linear-gradient(0deg, #ffffff, #ffffff),
+    radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(26, 21, 21, 0) 0%,
+      rgba(0, 0, 0, 0.16) 100%
+    );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.contactContainer div {
+  max-width: 367px;
+  min-height: 107px;
+  border: 8px solid #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38.37px;
+  letter-spacing: 0.3554em;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 70px;
+  padding: 25px 50px 0 50px;
+}
+.contactContainer p {
+  max-width: 763px;
+  min-height: 72px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-align: center;
+}
+form {
+  margin-top: 75px;
+}
+fieldset {
+  border: none; /* Remove the border from the fieldset */
+  padding: 0;
+  margin: 0;
+}
+input[type="text"],
+textarea {
+  width: 500px; /* Adjust the width to fit within the form */
+  padding: 10px;
+  margin: 20px 0;
+  border: none; /* Remove all borders */
+  border-left: 4px solid black; /* Add left border */
+  border-bottom: 4px solid black; /* Add bottom border */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.07px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+textarea {
+  height: 250px;
+  resize: none; /* Prevent resizing */
+  margin-bottom: 0px;
+}
+
+form .button {
+  border: none;
+}
+/* form div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.buttonForm {
+  width: 150px;
+  padding: 10px;
+  color: black;
+  background: none;
+  border: none;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  cursor: pointer;
+  display: block;
+  margin: auto 150px;
+  margin-top: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.section9 {
+  max-width: 1920px;
+  min-height: 326px;
+  background: #1a1a1a;
+  text-align: center;
+  padding-top: 90px;
+}
+.footer p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.29px;
+  letter-spacing: 0.1854em;
+  text-align: center;
+  margin: 5px 0px 40px 0px;
+}
+.footer a{
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.socialMediaIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.footer p:nth-child(4) {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.55px;
+  color: white;
+}
+
+/* .section6 .firstRollGallary .gallaries{
+  max-width: 450px;
+min-height: 400px;
+}  */
+
+/* mobile view */
+@media screen and (max-width: 900px) {
+  .section1 .menu {
+    display: flex;
+  }
+  .section1 .links {
+    display: none;
+  }
+  .section1 {
+    background-color: unset;
+    background-image: url("../images/mobileBackground.png");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    padding: unset;
+  }
+
+  .section1 nav {
+    background-color: black;
+    min-height: 60px;
+    padding: 20px 42px 10px 42px;
+  }
+  .section1 .logo .mobileLogo {
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
-  
-  .section4por div {
-    max-width: 482px;
-    min-height: 74px;
-    border: 8px solid #000000;
-    padding: 0 35px;
+  .section1 .logo .desktopLogo {
+    display: none;
   }
-  
-  .section4por div p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 38.37px;
-    letter-spacing: 0.4354em;
-    margin-top: 10px;
-    text-align: center;
+  .hero {
+    display: none;
   }
-  
-  /* section Five */
-  .section5 {
+
+  .heroMobile {
+    display: flex;
+  }
+
+  .section2 .itContent {
     max-width: 1920px;
-    min-height: 74px;
-    background-color: #1a1a1a;
+    min-height: 547px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    background: none;
+    background: #1d1d1d url(../images/mobileBackgroundit.png) no-repeat center /
+      388.05px 368.16px;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: 35%;
+    padding-top: 120px;
   }
-  .section5 div {
-    max-width: 500px;
-    min-height: 48px;
-    border-bottom: 1px solid white;
+  .itContent p {
+    max-width: 280px;
+    min-height: 275px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: justified;
   }
-  .section5 div a {
-    max-width: 149px;
-    min-height: 48px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 17.07px;
-    text-align: center;
-    color: white;
-    margin-right: 65px;
-    padding-top: 18px;
-    padding-left: 40px;
-    text-decoration: none;
+  .rowInlineblock {
+    display: block;
+    margin: auto;
   }
-  
-  /* Section Six */
+  .section3 {
+    margin: auto;
+    margin-top: 140px;
+  }
+  .iconContainer{
+    padding-left: unset;
+  }
+  .usingIcon1, .learningIcon1, .othersIcon1 {
+              display: block;
+              text-align: center;
+          }
+          .iconContent img {
+            margin-bottom: 20px;
+          }
+          .iconContent p {
+              margin: auto;
+               margin-bottom: 40px;
+              padding-bottom: 5px;
+          }
+
+          .iconContainer h3 {
+              margin: auto;
+              margin-bottom: 60px;
+              padding-bottom: 5px;
+          } 
   .section6 {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    box-sizing: border-box;
-    overflow: hidden; /* Prevent container overflow */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
-  
+
   .galleyContainer {
-    position: relative;
     width: 100%;
-    padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+    padding-top: 75%; /* Adjust aspect ratio for smaller screens */
     overflow: hidden;
+    position: relative;
   }
-  
+
   .galleyContainer img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Cover the container without distortion */
-    display: block; /* Remove extra space below images */
+    object-fit: cover;
     box-sizing: border-box;
   }
-  
+
   .gallaries.eatsome {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1; /* Ensure the div appears above the images */
-    padding: 20px; /* Add some padding */
+    padding: 20px;
     box-sizing: border-box;
   }
-  
-  .demoMore {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-  }
-  
-  .demoMore span {
-    max-width: 114px;
-    min-height: 27px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 14.63px;
-    letter-spacing: 0.095em;
-    text-align: center;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    padding: 6px 40px;
-    }
-  
-  .eatsome p:nth-child(1),
-  .eatsome p:nth-child(2),
-  .eatsome p:nth-child(3) {
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
+
   .eatsome p:nth-child(1) {
-    max-width: 134px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 10px;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 12.19px;
-    letter-spacing: 0.095em;
-    padding-top: 30px;
+    padding-top: 20px;
   }
-  
-  .eatsome p:nth-child(2) {
-    max-width: 482px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 31.97px;
-    letter-spacing: 0.2054em;
-  }
-  
-  .eatsome p:nth-child(3) {
-    max-width: 315px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 12.19px;
-    letter-spacing: -0.015em;
-    margin-bottom: 20px;
-  }
-
-  .section7 div {
-    max-width: 1920px;
-    min-height: 100px;
-    background: #1a1a1a;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    color: white;
-    font-weight: 600;
-    line-height: 24.38px;
-    text-align: center;
-    padding-top: 40px;
-  }
-  
-  .section8 .contactContainer {
-    max-width: 1920px;
-    min-height: 1178px;
-    background: linear-gradient(0deg, #ffffff, #ffffff),
-      radial-gradient(
-        50% 50% at 50% 50%,
-        rgba(26, 21, 21, 0) 0%,
-        rgba(0, 0, 0, 0.16) 100%
-      );
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-  }
-  
-  .contactContainer div {
-    max-width: 367px;
-    min-height: 107px;
-    border: 8px solid #000000;
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 38.37px;
-    letter-spacing: 0.3554em;
-    text-align: center;
-    margin-top: 90px;
-    margin-bottom: 70px;
-    padding: 25px 50px 0 50px;
-  }
-  .contactContainer p {
-    max-width: 763px;
-    min-height: 72px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 20.8px;
-    text-align: center;
-  }
-  form {
-    margin-top: 75px;
-  }
-  fieldset {
-    border: none; /* Remove the border from the fieldset */
-    padding: 0;
-    margin: 0;
-  }
-  input[type="text"],
-  textarea {
-    width: 500px; /* Adjust the width to fit within the form */
-    padding: 10px;
-    margin: 20px 0;
-    border: none; /* Remove all borders */
-    border-left: 4px solid black; /* Add left border */
-    border-bottom: 4px solid black; /* Add bottom border */
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 17.07px;
-    letter-spacing: 0.04em;
-    text-align: left;
-  }
-  
-  textarea {
-    height: 250px;
-    resize: none; /* Prevent resizing */
-    margin-bottom: 0px;
-  }
-  
-  form .button {
-    border: none;
-  }
-  /* form div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
-  .buttonForm {
-    width: 150px;
-    padding: 10px;
-    color: black;
-    background: none;
-    border: none;
-    border-left: 4px solid black;
-    border-right: 4px solid black;
-    cursor: pointer;
-    display: block;
-    margin: auto 150px;
-    margin-top: 80px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19.5px;
-    letter-spacing: 0.1em;
-    text-align: center;
-  }
-  
-  .section9 {
-    max-width: 1920px;
-    min-height: 326px;
-    background: #1a1a1a;
-    text-align: center;
-    padding-top: 90px;
-  }
-  .footer p {
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 18.29px;
-    letter-spacing: 0.1854em;
-    text-align: center;
-    margin: 5px 0px 40px 0px;
-  }
-  .footer a{
-    text-decoration: none;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  .socialMediaIcons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 50px;
-  }
-  
-  .footer p:nth-child(4) {
-    font-family: "Nunito", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24.55px;
-    color: white;
-  }
-  
-  /* .section6 .firstRollGallary .gallaries{
-    max-width: 450px;
-  min-height: 400px;
-  }  */
-  
-  /* mobile view */
-  @media screen and (max-width: 900px) {
-    .section1 .menu {
-      display: flex;
-    }
-    .section1 .links {
-      display: none;
-    }
-    .section1 {
-      background-color: unset;
-      background-image: url("../images/mobileBackground.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      padding: unset;
-    }
-  
-    .section1 nav {
-      background-color: black;
-      min-height: 60px;
-      padding: 20px 42px 10px 42px;
-    }
-    .section1 .logo .mobileLogo {
-      display: flex;
-    }
-    .section1 .logo .desktopLogo {
-      display: none;
-    }
-    .hero {
-      display: none;
-    }
-  
-    .heroMobile {
-      display: flex;
-    }
-  
-    .section2 .itContent {
-      max-width: 1920px;
-      min-height: 547px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: none;
-      background: #1d1d1d url(../images/mobileBackgroundit.png) no-repeat center /
-        388.05px 368.16px;
-      background-repeat: no-repeat;
-      background-position: 50% 40%;
-      background-size: 35%;
-      padding-top: 120px;
-    }
-    .itContent p {
-      max-width: 280px;
-      min-height: 275px;
-      font-family: "Open Sans", sans-serif;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 20.8px;
-      text-align: justified;
-    }
-    .rowInlineblock {
-      display: block;
-      margin: auto;
-    }
-    .section3 {
-      margin: auto;
-      margin-top: 140px;
-    }
-    .iconContainer{
-      padding-left: unset;
-    }
-    .usingIcon1, .learningIcon1, .othersIcon1 {
-                display: block;
-                text-align: center;
-            }
-
-            .iconContent p {
-                margin: auto;
-            }
-
-            .iconContainer h3 {
-                margin: auto;
-            } 
-    .section6 {
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-    }
-  
-    .galleyContainer {
-      width: 100%;
-      padding-top: 75%; /* Adjust aspect ratio for smaller screens */
-      overflow: hidden;
-      position: relative;
-    }
-  
-    .galleyContainer img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      box-sizing: border-box;
-    }
-  
-    .gallaries.eatsome {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-  
-    .eatsome p:nth-child(1) {
-      padding-top: 20px;
-    }
-  }
-  
+}
