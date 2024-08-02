@@ -213,40 +213,47 @@ html {
 
 .heroMobile {
   display: none;
-  width: 457px;
-  height: 159px;
+  /* max-width: 350px;
+  min-height: 159px; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 400px auto;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  /* cor */
 }
 
 .whiteSeparator {
-  width: 120px;
-  height: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  max-width: 100px;
+  margin: 20px 0;
 }
 
 .heroMobile span {
-  width: 457px;
-  height: 41px;
   font-family: "Advent Pro", sans-serif;
-  font-size: 25px;
+  font-size: 1.5em;
   font-weight: 400;
   line-height: 29.9px;
-  text-align: center;
 }
 .heroMobile p {
-  width: 455px;
-  height: 39px;
   font-family: "Montserrat", sans-serif;
-  font-size: 32px;
+  font-size: 1.8em;
   font-weight: 600;
-  line-height: 39.01px;
-  text-align: center;
+  line-height: 1.8em;
+  margin: 10px 0;
+}
+.whiteIconns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
 }
 
+.whiteIconns img {
+  width: 25px;
+  height: 25px;
+}
 /* section2 */
 .section2 {
   background: linear-gradient(
@@ -256,14 +263,14 @@ html {
     #1d1d1d 90.49%
   );
   max-width: 1920px;
-  height: 250px;
+  min-height: 250px;
   position: relative;
   z-index: 2;
   color: white;
 
   .itContent {
     max-width: 1920px;
-    height: 300px;
+    min-height: 300px;
     background: #1d1d1d url(../images/backgroundImage.png) no-repeat right /
       388.05px 368.16px;
     background-repeat: no-repeat;
@@ -287,7 +294,7 @@ html {
 
   p {
     max-width: 900px;
-    min-height: 89px; 
+    min-height: 89px;
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -510,7 +517,9 @@ html {
   text-align: left;
 }
 
-.usingNowContainer, .learningContainer, .otherSkillsContainer {
+.usingNowContainer,
+.learningContainer,
+.otherSkillsContainer {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -528,7 +537,9 @@ html {
   padding-left: 30px;
 }
 
-.usingIcon1, .learningIcon1, .othersIcon1 {
+.usingIcon1,
+.learningIcon1,
+.othersIcon1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -547,8 +558,8 @@ html {
 }
 
 .iconContent p {
-max-width: 240px;
-min-height: 52px;
+  max-width: 240px;
+  min-height: 52px;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -558,28 +569,28 @@ min-height: 52px;
 }
 
 .html5 {
-max-width: 84.21px;
-min-height: 100px;
+  max-width: 84.21px;
+  min-height: 100px;
 }
 .css3 {
-max-width: 84.14px;
-min-height: 100px;
+  max-width: 84.14px;
+  min-height: 100px;
 }
 .sass {
-max-width: 126.62px;
-min-height: 99.93px;
+  max-width: 126.62px;
+  min-height: 99.93px;
 }
 .javascriptBoostGit {
-max-width: 96.24px;
-min-height: 100px;
-} 
+  max-width: 96.24px;
+  min-height: 100px;
+}
 .react {
-max-width: 93.96px;
-min-height: 87.41px;
+  max-width: 93.96px;
+  min-height: 87.41px;
 }
 .figma {
-max-width: 69.49px;
-min-height: 100px;
+  max-width: 69.49px;
+  min-height: 100px;
 }
 
 /* Section Four */
@@ -588,6 +599,7 @@ min-height: 100px;
   min-height: 321px;
   background-image: url("../images/imagePORTFOLIO.png");
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -597,10 +609,15 @@ min-height: 100px;
   max-width: 482px;
   min-height: 74px;
   border: 8px solid #000000;
-  padding: 0 35px;
+  padding: 10px 35px 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section4por div p {
+  max-width: 482px;
+  min-height: 74px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -702,7 +719,7 @@ min-height: 100px;
   border-left: 1px solid white;
   border-right: 1px solid white;
   padding: 6px 40px;
-  }
+}
 
 .eatsome p:nth-child(1),
 .eatsome p:nth-child(2),
@@ -793,6 +810,7 @@ min-height: 100px;
   font-weight: 400;
   line-height: 20.8px;
   text-align: center;
+  margin-bottom: 40px;
 }
 form {
   margin-top: 75px;
@@ -811,12 +829,14 @@ textarea {
   border-left: 4px solid black; /* Add left border */
   border-bottom: 4px solid black; /* Add bottom border */
   box-sizing: border-box; /* Ensure padding and border are included in the width */
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 17.07px;
   letter-spacing: 0.04em;
   text-align: left;
+  display: block;
+  /* margin: auto; */
 }
 
 textarea {
@@ -834,8 +854,9 @@ form .button {
   justify-content: center;
 } */
 .buttonForm {
-  width: 150px;
+  max-width: 150px;
   padding: 10px;
+  padding-left: 25px;
   color: black;
   background: none;
   border: none;
@@ -843,7 +864,7 @@ form .button {
   border-right: 4px solid black;
   cursor: pointer;
   display: block;
-  margin: auto 150px;
+  margin: auto;
   margin-top: 80px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -859,8 +880,10 @@ form .button {
   background: #1a1a1a;
   text-align: center;
   padding-top: 90px;
+  display: flex;
+  justify-content: center;
 }
-.footer p {
+.footer p:nth-child(2) {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
@@ -870,7 +893,7 @@ form .button {
   text-align: center;
   margin: 5px 0px 40px 0px;
 }
-.footer a{
+.footer a {
   text-decoration: none;
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -885,17 +908,14 @@ form .button {
 }
 
 .footer p:nth-child(4) {
+  max-width: 450px;
+  min-height: 22px;
   font-family: "Nunito", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24.55px;
   color: white;
 }
-
-/* .section6 .firstRollGallary .gallaries{
-  max-width: 450px;
-min-height: 400px;
-}  */
 
 /* mobile view */
 @media screen and (max-width: 900px) {
@@ -931,6 +951,12 @@ min-height: 400px;
 
   .heroMobile {
     display: flex;
+    width: 457px;
+    height: 159px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 400px auto;
   }
 
   .section2 .itContent {
@@ -964,27 +990,35 @@ min-height: 400px;
     margin: auto;
     margin-top: 140px;
   }
-  .iconContainer{
+  .iconContainer {
     padding-left: unset;
   }
-  .usingIcon1, .learningIcon1, .othersIcon1 {
-              display: block;
-              text-align: center;
-          }
-          .iconContent img {
-            margin-bottom: 20px;
-          }
-          .iconContent p {
-              margin: auto;
-               margin-bottom: 40px;
-              padding-bottom: 5px;
-          }
+  .usingIcon1,
+  .learningIcon1,
+  .othersIcon1 {
+    display: block;
+    text-align: center;
+  }
+  .iconContent img {
+    margin-bottom: 20px;
+  }
+  .iconContent p {
+    margin: auto;
+    margin-bottom: 40px;
+    padding-bottom: 5px;
+  }
 
-          .iconContainer h3 {
-              margin: auto;
-              margin-bottom: 60px;
-              padding-bottom: 5px;
-          } 
+  .iconContainer h3 {
+    margin: auto;
+    margin-bottom: 40px;
+    padding-bottom: 5px;
+  }
+
+  .section4por div {
+    max-width: unset;
+    min-height: unset;
+  }
+
   .section6 {
     display: flex;
     flex-direction: column;
@@ -1017,5 +1051,66 @@ min-height: 400px;
 
   .eatsome p:nth-child(1) {
     padding-top: 20px;
+  }
+  form {
+    max-width: 250px;
+    margin: auto 50px;
+  }
+  input[type="text"],
+  textarea {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttonForm {
+    width: 140px;
+    display: flex;
+  }
+
+
+@media (max-width: 460px) {
+  * {
+    max-width: 100%;
+  }
+  .section4por div {
+    width: 210px;
+    height: 68px;
+    border: 8px 0px 0px 0px;
+    padding-top: 15px;
+  }
+  .section4por div p {
+    max-width: 156px;
+    min-height: 47px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.91px;
+    letter-spacing: 0.4354em;
+    text-align: center;
+  }
+  .contact8 {
+    max-width: 156px;
+    min-height: 68px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.91px;
+    letter-spacing: 0.3554em;
+    text-align: center;
+  }
+  form {
+    max-width: 250px;
+    margin: auto 50px;
+  }
+  input[type="text"],
+  textarea {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttonForm {
+    width: 140px;
+    display: flex;
   }
 }
